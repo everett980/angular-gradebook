@@ -40,6 +40,12 @@ body {
     display: flex;
     align-items: center;
     .left {
+      i {
+        font-size: 38px;
+      }
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
       flex: 10;
     }
     .right {
