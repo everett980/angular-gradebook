@@ -1,7 +1,8 @@
 'use strict';
 var router = require('express').Router();
 var mongoose = require('mongoose');
-var MasterAssignment = require("../../db/models/masterAssignment");
+require("../../db/models/masterAssignment");
+var MasterAssignment = mongoose.model('MasterAssignment');
 
 //read all
 router.get('/', function(req, res, next){
