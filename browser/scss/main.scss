@@ -19,6 +19,44 @@ body {
   margin: 0 auto;
 }
 
+.navbar-container {
+  background: #607D8B;
+  height: 58px;
+  color: white;
+
+
+}
+.navbar {
+  height: 58px;
+  display: -webkit-flex;
+  display: flex;
+  color: white;
+
+  .container {
+    height: 58px;
+    padding: 0 20px;
+    color: white;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    .left {
+      i {
+        font-size: 38px;
+      }
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      flex: 10;
+    }
+    .right {
+      flex: 1;
+      button {
+        margin: 0;
+      }
+    }
+  }
+}
+
 @import 'directives/main';
 @import 'home/main';
 @import 'about/main';
