@@ -1,8 +1,8 @@
 app.config(function ($stateProvider) {
 
-    $stateProvider.state('login', {
-        url: '/login',
-        templateUrl: 'js/login/login.html',
+    $stateProvider.state('signup', {
+        url: '/signup',
+        templateUrl: 'js/signup/signup.html',
         controller: 'LoginCtrl'
     });
 
@@ -10,13 +10,13 @@ app.config(function ($stateProvider) {
 
 app.controller('LoginCtrl', function ($scope, AuthService, $state, FirebaseFactory) {
 
-    $scope.login = {};
+    $scope.signup = {};
     $scope.error = null;
 
-    $scope.sendLogin = function (loginInfo) {
+    $scope.sendLogin = function (signupInfo) {
 		
-		console.log(loginInfo);
-		FirebaseFactory.login(loginInfo.email, loginInfo.password);
+		console.log(signupInfo);
+		FirebaseFactory.signup(signupInfo.email, signupInfo.password);
 		/*
         $scope.error = null;
 

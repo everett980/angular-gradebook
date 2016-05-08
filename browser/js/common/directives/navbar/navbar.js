@@ -40,7 +40,12 @@ app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state) 
             $rootScope.$on(AUTH_EVENTS.loginSuccess, setUser);
             $rootScope.$on(AUTH_EVENTS.logoutSuccess, removeUser);
             $rootScope.$on(AUTH_EVENTS.sessionTimeout, removeUser);
-
+			$rootScope.$on('signed in', function(emit, data) {
+				console.log('data received after log in as seen from the navbar: ');
+				console.log(data);
+				scope.user = data;
+				scope.$digest();
+			});
         }
 
     };
