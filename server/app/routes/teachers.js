@@ -28,6 +28,38 @@ router.get('/uid/:teacherUID/', (req, res, next) => {
 	});
 });
 
+//get all students for a particular teacher by uid
+router.get('/allstudents/:teacherUID/', (req, res, next) => {
+	Teacher.findOne({uid: req.params.teacherUID}).exec()
+	.then((foundTeacher) => {
+		var Course = mongoose.model('Course');
+		return Course.find({'_id': { $in: foundTeacher.courses }});
+	}).then((foundCourses) => {
+		const groupIds = foundCourses.reduce(function(prev, curr) {
+			curr.groups.forEach(function(groupId) {
+				prev.push(groupId);
+			});
+			return prev;
+		}, []);
+		var Group = mongoose.model('Group');
+		return Group.find({'_id': { $in: groupIds }});
+	}).then((groups) => {
+		const studentIds = groups.reduce(function(prev, curr) {
+			curr.students.forEach(function(studentId) {
+				prev.push(studentId);
+			});
+			return prev;
+		}, []);
+		var Student = mongoose.model('Student');
+		return Student.find({'_id': { $in: studentIds }});
+	}).then((students) => {
+		res.send(students);
+	}).catch((err) => {
+		console.error(err);
+		res.send(err);
+	})
+});
+
 //read one
 router.get('/:teacherId', function(req, res, next){
     Teacher.findOne({ _id: req.params.teacherId } ).exec()
