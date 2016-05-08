@@ -62,11 +62,17 @@ navbar {
   }
 
   button {
-    background: $accentColor !important;
-    border-radius: 0px !important;
     border-color: transparent !important;
-    box-shadow: 0px 2px 10px -3px black;
-    color: black !important;
+    font-weight: bold !important;
+    color: $accentColor;
+    &.primary {
+      color: white;
+      background: $accentColor !important;
+      border-radius: 2px !important;
+      border-color: transparent !important;
+      box-shadow: 0px 2px 10px -3px black;
+      margin: 0 8px !important;
+    }
   }
 
 }

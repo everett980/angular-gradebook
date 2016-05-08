@@ -1,0 +1,18 @@
+.list {
+  .list-item {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    color: #616161;
+    i {
+      align-self: center;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      width: 48px;
+      height: 54px;
+    }
+    .list-name {
+    }
+  }
+}
