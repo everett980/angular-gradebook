@@ -4,7 +4,6 @@ app.config(function ($stateProvider) {
     templateUrl: 'js/menuStates/gradebook.html',
     controller: function($scope) {
       $scope.data = [{
-
       }]
     }
   })

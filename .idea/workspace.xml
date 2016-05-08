@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cf312ac-c6fc-4d56-b84d-2e889737d59e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browser/js/menuStates/students.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/js/common/directives/navbar/navbar.html" afterPath="$PROJECT_DIR$/browser/js/common/directives/navbar/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/js/common/directives/navigation/navigation.js" afterPath="$PROJECT_DIR$/browser/js/common/directives/navigation/navigation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/js/menuStates/gradebook.js" afterPath="$PROJECT_DIR$/browser/js/menuStates/gradebook.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/scss/directives/navbar.scss" afterPath="$PROJECT_DIR$/browser/scss/directives/navbar.scss" />
     </list>
@@ -26,6 +28,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="gradebook.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/browser/js/menuStates/gradebook.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browser/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,8 +51,8 @@
       <file leaf-file-name="students.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app/routes/students.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -78,6 +90,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="navigation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/browser/js/common/directives/navigation/navigation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="students.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/browser/js/menuStates/students.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="development.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/env/development.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browser/js/common/directives/navbar/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="150">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -111,15 +143,15 @@
         <option value="$PROJECT_DIR$/browser/scss/directives/_colors.scss" />
         <option value="$PROJECT_DIR$/server/app/views/index.html" />
         <option value="$PROJECT_DIR$/browser/js/fsa/fsa-pre-built.js" />
-        <option value="$PROJECT_DIR$/browser/js/common/directives/navigation/navigation.js" />
         <option value="$PROJECT_DIR$/browser/js/gradebook/gradebook.html" />
         <option value="$PROJECT_DIR$/browser/js/gradebook/gradebook.js" />
         <option value="$PROJECT_DIR$/browser/js/common/directives/navigation/navigation.html" />
         <option value="$PROJECT_DIR$/browser/scss/main.scss" />
         <option value="$PROJECT_DIR$/browser/scss/navigation/main.scss" />
-        <option value="$PROJECT_DIR$/browser/js/menuStates/gradebook.js" />
         <option value="$PROJECT_DIR$/browser/scss/directives/navbar.scss" />
         <option value="$PROJECT_DIR$/browser/js/common/directives/navbar/navbar.html" />
+        <option value="$PROJECT_DIR$/browser/js/common/directives/navigation/navigation.js" />
+        <option value="$PROJECT_DIR$/browser/js/menuStates/gradebook.js" />
       </list>
     </option>
   </component>
@@ -201,11 +233,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="browser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,15 +247,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="browser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7.1.1.mygrade_frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7.1.1.mygrade_frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="browser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menuStates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,7 +290,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="editor.config.accepted" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="navbar.html&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/navbar/navbar.html&#10;welcome&#9;null&#9;null&#10;navbar&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/scss/directives/navbar.scss&#10;main&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/scss/main.scss&#10;navigat&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/navigation/navigation.html&#10;navi&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/navigation/navigation.html&#10;index.h&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/server/app/views/index.html&#10;full&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/fullstack-logo/fullstack-logo.html&#10;fullstack&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/fullstack-logo/fullstack-logo.html&#10;index.html&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/node_modules/acorn/test/index.html&#10;index&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/node_modules/babel-runtime/core-js/array/index-of.js&#10;index.htm&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/client/index.html" />
+    <property name="SearchEverywhereHistoryKey" value="navigation&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/navigation/navigation.js&#10;navbar.html&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/navbar/navbar.html&#10;welcome&#9;null&#9;null&#10;navbar&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/scss/directives/navbar.scss&#10;main&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/scss/main.scss&#10;navigat&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/navigation/navigation.html&#10;navi&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/navigation/navigation.html&#10;index.h&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/server/app/views/index.html&#10;full&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/fullstack-logo/fullstack-logo.html&#10;fullstack&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/browser/js/common/directives/fullstack-logo/fullstack-logo.html&#10;index.html&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/node_modules/acorn/test/index.html&#10;index&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/node_modules/babel-runtime/core-js/array/index-of.js&#10;index.htm&#9;FILE&#9;file:///Users/nick/Documents/programing/7.hackathons/7.1.1.mygrade_frontend/client/index.html" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RunManager">
@@ -320,12 +366,12 @@
       <workItem from="1462664053463" duration="1351000" />
       <workItem from="1462667161497" duration="4724000" />
       <workItem from="1462676000639" duration="2125000" />
-      <workItem from="1462679202903" duration="1369000" />
+      <workItem from="1462679202903" duration="2100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12941000" />
+    <option name="totallyTimeSpent" value="13672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -358,14 +404,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/browser/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/browser/js/common/directives/fullstack-logo/fullstack-logo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -588,14 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browser/js/common/directives/navigation/navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/browser/scss/navigation/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -616,14 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/js/menuStates/gradebook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -670,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/routes/students.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/browser/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -704,8 +718,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/browser/js/common/directives/navbar/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/routes/students.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/js/common/directives/navigation/navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/js/menuStates/students.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/js/menuStates/gradebook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding />
         </state>
       </provider>

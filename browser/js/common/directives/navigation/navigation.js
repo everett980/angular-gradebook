@@ -20,7 +20,8 @@ function ctrl($scope) {
     // },
     {
       icon: "face",
-      name: "Students"
+      name: "Students",
+      sref: "students"
     },
     {
       icon: "people",
