@@ -1,4 +1,4 @@
-app.factory('FirebaseFactory', function($rootScope) {
+app.factory('FirebaseFactory', function($rootScope, Auth) {
 	var factory = {};
 	factory.ref = new Firebase("https://crackling-inferno-5205.firebaseio.com/");
 	factory.uid = null;
@@ -7,7 +7,7 @@ app.factory('FirebaseFactory', function($rootScope) {
 		console.log(arguments);
 		that.ref.createUser({
 			email    : email,
-			password : password 
+			password : password
 		}, function(error, userData) {
 			if (error) {
 				console.log("Error creating user:", error);
@@ -28,7 +28,8 @@ app.factory('FirebaseFactory', function($rootScope) {
 			if (error) {
 				console.log("Login Failed!", error);
 			} else {
-				console.log("Authenticated successfully with payload:", authData);
+				console.log("Authenticated successfully with payload:", authData)
+        Auth.uid = authData.uid;
 				that.uid = authData.uid;
 				$rootScope.$broadcast('signed in', {uid: authData.uid, email: authData.auth.token.email});
 			}
