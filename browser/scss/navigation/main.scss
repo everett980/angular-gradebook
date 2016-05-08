@@ -1,5 +1,17 @@
+navigation {
+  margin: 16px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 1px 4px 14px -2px rgba(102, 102, 102, 0.69);
+
+}
+
 .list {
-  .list-item {
+  .list-item > a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
     display: -webkit-flex;
     display: flex;
     align-items: center;

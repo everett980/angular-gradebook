@@ -1,6 +1,8 @@
 <div class="list">
-    <div class="list-item" ng-repeat="item in items">
+  <div class="list-item" ng-repeat="item in items">
+    <a ui-sref="{{ item.sref }}">
       <div><i class="material-icons">{{item.icon}}</i></div>
       <div class="list-name">{{item.name}}</div>
-    </div>
+    </a>
+  </div>
 </div>
