@@ -20,6 +20,43 @@ router.post('/', function(req, res, next){
     });
 });
 
+//get all grades with tags for a student
+router.get('/student/:studentId', (req, res, next) => {
+	Assignment.find({}).exec()
+	.then(function(allAssignments) {
+		const mastersWithScore = allAssignments.reduce(function(prev, curr) {
+			const studentScore = curr.studentScores.filter(function(score) {
+				return score.studentRef == req.params.studentId;
+			});
+			if(studentScore.length) {
+				prev.push({
+					masterId: curr.masterAssignment,
+					score: studentScore[0].score
+				})
+			}
+			return prev;
+		}, []);
+		const MasterAssignment = mongoose.model('MasterAssignment');
+		var foundShit = Promise.all( mastersWithScore.map(function(masterScore) {
+			return MasterAssignment.findById(masterScore.masterId);
+		}) );
+		return Promise.all( [foundShit, mastersWithScore] );
+	}).then(function(foundMasters) {
+		const tagScores = foundMasters[0].reduce(function(prev, curr) {
+			curr.tags.forEach(function(tag) {
+				prev.push({
+					tag: tag,
+					score: foundMasters[1].filter(function(score) {
+						return ""+score.masterId == ""+curr._id;
+					})[0].score
+				});
+			});
+			return prev;
+		}, []);
+		res.send(tagScores);
+	}).catch(console.error.bind(console));
+});
+
 //read one
 router.get('/:assignmentId', function(req, res, next){
     Assignment.findOne({ _id: req.params.assignmentId } ).exec()
