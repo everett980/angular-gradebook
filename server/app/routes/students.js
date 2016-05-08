@@ -1,7 +1,8 @@
 'use strict';
 var router = require('express').Router();
 var mongoose = require('mongoose');
-var Student = require("../../db/models/student");
+require("../../db/models/student");
+var Student = mongoose.model('Student');
 
 //read all
 router.get('/', function(req, res, next){
