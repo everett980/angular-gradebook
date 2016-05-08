@@ -45,6 +45,8 @@ router.get('/student/:studentId', (req, res, next) => {
 		const tagScores = foundMasters[0].reduce(function(prev, curr) {
 			curr.tags.forEach(function(tag) {
 				prev.push({
+					assignmentId: curr._id,
+					type: curr.type,
 					tag: tag,
 					score: foundMasters[1].filter(function(score) {
 						return ""+score.masterId == ""+curr._id;
