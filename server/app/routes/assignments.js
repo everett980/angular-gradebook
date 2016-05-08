@@ -28,12 +28,7 @@ router.get('/:assignmentId', function(req, res, next){
 });
 
 router.put('/:assignmentId', function(req, res, next){
-    var updatedAssignment = new Assignment(req.body)
-    var upsertData = updatedAssignment.toObject();
-
-    delete upsertData._id;
-
-    Assignment.update({ _id: req.params.assignmentId}, upsertData, {upsert: true}, function(err) {
+    Assignment.update({ _id: req.params.assignmentId}, req.body, {upsert: true}, function(err) {
         if(!err){
             res.status(200).send();
         } else {

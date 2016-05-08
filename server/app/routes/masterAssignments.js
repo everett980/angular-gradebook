@@ -28,12 +28,7 @@ router.get('/:masterAssignmentId', function(req, res, next){
 });
 
 router.put('/:masterAssignmentId', function(req, res, next){
-    var updatedMasterAssignment = new MasterAssignment(req.body)
-    var upsertData = updatedMasterAssignment.toObject();
-
-    delete upsertData._id;
-
-    MasterAssignment.update({ _id: req.params.masterAssignmentId}, upsertData, {upsert: true}, function(err) {
+    MasterAssignment.update({ _id: req.body}, upsertData, {upsert: true}, function(err) {
         if(!err){
             res.status(200).send();
         } else {

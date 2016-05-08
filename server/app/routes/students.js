@@ -1,11 +1,11 @@
 'use strict';
 var router = require('express').Router();
 var mongoose = require('mongoose');
-var Teacher = require("../../../db/models/teacher");
+var Student = require("../../../db/models/student");
 
 //read all
 router.get('/', function(req, res, next){
-    Teacher.find().exec()
+    Student.find().exec()
     .then(function(results){
         res.send(results);
     });
@@ -13,27 +13,22 @@ router.get('/', function(req, res, next){
 
 //create
 router.post('/', function(req, res, next){
-    Teacher.create(req.body)
+    Student.create(req.body)
     .then(function(result){
         res.status(201).send(result);
     });
 });
 
 //read one
-router.get('/:teacherId', function(req, res, next){
-    Teacher.findOne({ _id: req.params.teacherId } ).exec()
+router.get('/:studentId', function(req, res, next){
+    Student.findOne({ _id: req.params.studentId } ).exec()
     .then(function(result){
         res.send(result);
     });
 });
 
-router.put('/:teacherId', function(req, res, next){
-    var updatedTeacher = new Teacher(req.body)
-    var upsertData = updatedTeacher.toObject();
-
-    delete upsertData._id;
-
-    Teacher.update({ _id: req.params.teacherId}, upsertData, {upsert: true}, function(err) {
+router.put('/:studentId', function(req, res, next){
+    Student.update({ _id: req.params.studentId}, req.body, {upsert: true}, function(err) {
         if(!err){
             res.status(200).send();
         } else {
@@ -46,8 +41,8 @@ router.put('/:teacherId', function(req, res, next){
 
 
 //delete
-router.delete('/:teacherId', function(req, res, next){
-    Teacher.findOne({ _id: req.params.teacherId } ).remove().exec()
+router.delete('/:studentId', function(req, res, next){
+    Student.findOne({ _id: req.params.studentId } ).remove().exec()
     .then(function(result){
         res.sendStatus(200);
     });

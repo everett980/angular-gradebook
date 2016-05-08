@@ -1,11 +1,11 @@
 'use strict';
 var router = require('express').Router();
 var mongoose = require('mongoose');
-var Course = require("../../../db/models/course");
+var Group = require("../../../db/models/group");
 
 //read all
 router.get('/', function(req, res, next){
-    Course.find().exec()
+    Group.find().exec()
     .then(function(results){
         res.send(results);
     });
@@ -13,27 +13,22 @@ router.get('/', function(req, res, next){
 
 //create
 router.post('/', function(req, res, next){
-    Course.create(req.body)
+    Group.create(req.body)
     .then(function(result){
         res.status(201).send(result);
     });
 });
 
 //read one
-router.get('/:courseId', function(req, res, next){
-    Course.findOne({ _id: req.params.courseId } ).exec()
+router.get('/:groupId', function(req, res, next){
+    Group.findOne({ _id: req.params.groupId } ).exec()
     .then(function(result){
         res.send(result);
     });
 });
 
-router.put('/:courseId', function(req, res, next){
-    var updatedCourse = new Course(req.body)
-    var upsertData = updatedCourse.toObject();
-
-    delete upsertData._id;
-
-    Course.update({ _id: req.params.courseId}, upsertData, {upsert: true}, function(err) {
+router.put('/:groupId', function(req, res, next){
+    Group.update({ _id: req.params.groupId}, req.body, {upsert: true}, function(err) {
         if(!err){
             res.status(200).send();
         } else {
@@ -41,13 +36,12 @@ router.put('/:courseId', function(req, res, next){
             res.status(404).send();
         }
     });
-
 });
 
 
 //delete
-router.delete('/:courseId', function(req, res, next){
-    Course.findOne({ _id: req.params.courseId } ).remove().exec()
+router.delete('/:groupId', function(req, res, next){
+    Group.findOne({ _id: req.params.groupId } ).remove().exec()
     .then(function(result){
         res.sendStatus(200);
     });
