@@ -25,15 +25,18 @@ function ctrl($scope) {
     },
     {
       icon: "people",
-      name: "Classes"
+      name: "Classes",
+      sref: ""
     },
     {
       icon: "import_contacts",
-      name: "Courses"
+      name: "Courses",
+      sref: ""
     },
     {
       icon: "description",
-      name: "Assignments"
+      name: "Assignments",
+      sref: ""
     },
   ]
 }

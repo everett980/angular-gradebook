@@ -1,0 +1,9 @@
+<h1>Sophie Miller - {{currentSection}} {{average}}%</h1>
+<svg width="1500" height="300">
+</svg>
+<div ng-repeat="type in types">
+    <button class="btn login-button primary" ng-click="vizByType(type)">{{type}}</button>
+</div>
+<div ng-repeat="tag in tags">
+    <button class="btn login-button primary" ng-click="vizByTag(tag)">{{tag}}</button>
+</div>
