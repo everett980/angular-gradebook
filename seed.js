@@ -150,77 +150,366 @@ const students = [{
 	"name": "Martha Gardner",
 	"phoneNumber": "84-(981)434-5493"
 }]; 
+/* const masterAssignments = [{
+   "name": "GIS Technical Architect",
+   "tags": [
+   "Health Education",
+   "MPBN",
+   "HUMINT"
+   ],
+   "type": "Quechua"
+   }, {
+   "name": "Structural Engineer",
+   "tags": [
+   "Ownership",
+   "WAN",
+   "BWA"
+   ],
+   "type": "Armenian"
+   }, {
+   "name": "Librarian",
+   "tags": [
+   "EOB",
+   "Radio Host"
+   ],
+   "type": "Bosnian"
+   }, {
+   "name": "GIS Technical Architect",
+   "tags": [
+   "Cyber-security",
+   "Performance Tuning",
+   "CSS Sprites"
+   ],
+   "type": "Dari"
+   }, {
+   "name": "VP Accounting",
+   "tags": [
+   "Ukulele"
+   ],
+   "type": "Guaraní"
+   }, {
+   "name": "VP Product Management",
+   "tags": [
+   "Dump Truck"
+   ],
+   "type": "Malay"
+   }, {
+   "name": "Sales Associate",
+   "tags": [
+   "HMI Programming"
+   ],
+   "type": "Portuguese"
+   }, {
+   "name": "Librarian",
+   "tags": [
+   "Joint Military Operations",
+   "User Research",
+   "NAS"
+   ],
+   "type": "Bulgarian"
+   }, {
+   "name": "Tax Accountant",
+   "tags": [
+   "HTML"
+   ],
+   "type": "Guaraní"
+   }, {
+   "name": "Registered Nurse",
+   "tags": [
+   "PDMLink",
+   "OLAP Cube Studio",
+   "Mplus"
+   ],
+   "type": "Nepali"
+}]
+*/
 const masterAssignments = [{
-	"name": "GIS Technical Architect",
-		"tags": [
-			"Health Education",
-		"MPBN",
-		"HUMINT"
-			],
-		"type": "Quechua"
-}, {
 	"name": "Structural Engineer",
 		"tags": [
-			"Ownership",
-		"WAN",
-		"BWA"
-			],
-		"type": "Armenian"
+			"multiple choice",
+			"visual",
+			"source criticism"
+	],
+		"type": "homework"
 }, {
-	"name": "Librarian",
+	"name": "Research Nurse",
 		"tags": [
-			"EOB",
-		"Radio Host"
-			],
-		"type": "Bosnian"
-}, {
-	"name": "GIS Technical Architect",
-	"tags": [
-		"Cyber-security",
-	"Performance Tuning",
-	"CSS Sprites"
-		],
-	"type": "Dari"
+			"visual",
+			"free response",
+			"source criticism"
+	],
+		"type": "test"
 }, {
 	"name": "VP Accounting",
 	"tags": [
-		"Ukulele"
-		],
-	"type": "Guaraní"
+		"source criticism"
+	],
+		"type": "essay"
 }, {
-	"name": "VP Product Management",
+	"name": "Research Assistant IV",
 	"tags": [
-		"Dump Truck"
-		],
-	"type": "Malay"
+		"free response",
+		"visual"
+	],
+		"type": "essay"
 }, {
-	"name": "Sales Associate",
+	"name": "Teacher",
 	"tags": [
-		"HMI Programming"
-		],
-	"type": "Portuguese"
+		"visual",
+		"free response",
+		"source criticism"
+	],
+		"type": "quiz"
 }, {
-	"name": "Librarian",
+	"name": "VP Accounting",
 	"tags": [
-		"Joint Military Operations",
-	"User Research",
-	"NAS"
-		],
-	"type": "Bulgarian"
+		"visual",
+		"source criticism",
+		"visual"
+	],
+		"type": "test"
 }, {
-	"name": "Tax Accountant",
+	"name": "Programmer Analyst IV",
 	"tags": [
-		"HTML"
-		],
-	"type": "Guaraní"
+		"free response",
+		"source criticism",
+		"visual"
+	],
+		"type": "homework"
+}, {
+	"name": "VP Accounting",
+	"tags": [
+		"multiple choice",
+		"visual",
+		"free response"
+	],
+		"type": "test"
+}, {
+	"name": "Junior Executive",
+	"tags": [
+		"free response",
+		"multiple choice"
+	],
+		"type": "essay"
+}, {
+	"name": "Assistant Professor",
+	"tags": [
+		"free response",
+		"visual"
+	],
+		"type": "homework"
+}, {
+	"name": "Marketing Manager",
+	"tags": [
+		"free response",
+		"source criticism",
+		"multiple choice"
+	],
+		"type": "quiz"
+}, {
+	"name": "Systems Administrator I",
+	"tags": [
+		"free response",
+		"visual"
+	],
+		"type": "test"
+}, {
+	"name": "Product Engineer",
+	"tags": [
+		"multiple choice",
+		"visual",
+		"source criticism",
+		"free response"
+	],
+		"type": "essay"
+}, {
+	"name": "Technical Writer",
+	"tags": [
+		"source criticism",
+		"free response"
+	],
+		"type": "homework"
+}, {
+	"name": "Electrical Engineer",
+	"tags": [
+		"free response",
+		"source criticism"
+	],
+		"type": "test"
+}, {
+	"name": "Executive Secretary",
+	"tags": [
+		"source criticism"
+	],
+		"type": "homework"
+}, {
+	"name": "Programmer Analyst III",
+	"tags": [
+		"free response",
+		"multiple choice",
+		"source criticism"
+	],
+		"type": "essay"
+}, {
+	"name": "Senior Financial Analyst",
+	"tags": [
+		"multiple choice",
+		"source criticism"
+	],
+		"type": "quiz"
+}, {
+	"name": "Nuclear Power Engineer",
+	"tags": [
+		"multiple choice",
+		"free response",
+		"source criticism"
+	],
+		"type": "test"
+}, {
+	"name": "Budget/Accounting Analyst III",
+	"tags": [
+		"visual",
+		"source criticism",
+		"multiple choice"
+	],
+		"type": "homework"
+}, {
+	"name": "GIS Technical Architect",
+	"tags": [
+		"free response",
+		"multiple choice"
+	],
+		"type": "homework"
+}, {
+	"name": "Staff Accountant III",
+	"tags": [
+		"free response"
+	],
+		"type": "quiz"
+}, {
+	"name": "Software Test Engineer III",
+	"tags": [
+		"multiple choice"
+	],
+		"type": "test"
+}, {
+	"name": "Senior Cost Accountant",
+	"tags": [
+		"visual",
+		"free response"
+	],
+		"type": "quiz"
+}, {
+	"name": "Programmer Analyst III",
+	"tags": [
+		"multiple choice"
+	],
+		"type": "test"
+}, {
+	"name": "Engineer I",
+	"tags": [
+		"free response",
+		"multiple choice",
+		"source criticism"
+	],
+		"type": "homework"
+}, {
+	"name": "Chief Design Engineer",
+	"tags": [
+		"multiple choice",
+		"source criticism",
+		"visual"
+	],
+		"type": "homework"
+}, {
+	"name": "Environmental Specialist",
+	"tags": [
+		"visual",
+		"free response"
+	],
+		"type": "essay"
+}, {
+	"name": "Safety Technician I",
+	"tags": [
+		"free response",
+		"multiple choice"
+	],
+		"type": "homework"
+}, {
+	"name": "Recruiting Manager",
+	"tags": [
+		"visual",
+		"free response",
+		"source criticism"
+	],
+		"type": "test"
+}, {
+	"name": "Assistant Professor",
+	"tags": [
+		"visual"
+	],
+		"type": "homework"
+}, {
+	"name": "Software Test Engineer IV",
+	"tags": [
+		"visual",
+		"free response"
+	],
+		"type": "essay"
+}, {
+	"name": "Help Desk Technician",
+	"tags": [
+		"visual",
+		"multiple choice"
+	],
+		"type": "quiz"
+}, {
+	"name": "Information Systems Manager",
+	"tags": [
+		"visual"
+	],
+		"type": "essay"
+}, {
+	"name": "Business Systems Development Analyst",
+	"tags": [
+		"multiple choice",
+		"visual"
+	],
+		"type": "test"
+}, {
+	"name": "Account Executive",
+	"tags": [
+		"free response",
+		"multiple choice"
+	],
+		"type": "quiz"
+}, {
+	"name": "Software Test Engineer III",
+	"tags": [
+		"visual"
+	],
+		"type": "test"
+}, {
+	"name": "Account Coordinator",
+	"tags": [
+		"visual",
+		"source criticism"
+	],
+		"type": "homework"
+}, {
+	"name": "Help Desk Operator",
+	"tags": [
+		"multiple choice",
+		"visual"
+	],
+		"type": "quiz"
 }, {
 	"name": "Registered Nurse",
 	"tags": [
-		"PDMLink",
-	"OLAP Cube Studio",
-	"Mplus"
-		],
-	"type": "Nepali"
+		"source criticism",
+		"free response"
+	],
+		"type": "quiz"
 }]
 var assignments = [];
 
@@ -281,20 +570,25 @@ var seedMasterAssignments = function() {
 }
 var seedAssignments = function() {
 	var testScores = stochasm({mean: 85, stdev: 9, min: 70, max: 100})
-	assignments = results["masters"].map(function(master) {
-		return {
-			masterAssignment: master._id,
-			date: new Date(new Date().getTime() - Math.floor(Math.random() * 600000000)),
-			studentScores: results["students"].map(function(student) {
-				return {
-					studentRef: student._id,
+		assignments = results["masters"].map(function(master) {
+			return {
+				masterAssignment: master._id,
+					date: new Date(new Date().getTime() - Math.floor(Math.random() * 600000000)),
+					studentScores: results["students"].map(function(student) {
+						const returnMe = {
+							studentRef: student._id,
 					score: testScores.next()
-				}
-			})
-	 	}
-	});
+						}
+						if(master.tags.indexOf('spatial') > -1) {
+							returnMe.score = returnMe.score + 10;
+							if(returnMe.score > 100) returnMe.score = 100;
+						}
+						return returnMe;
+					})
+			}
+		});
 	console.log(assignments);
-    return Assignment.create(assignments);
+	return Assignment.create(assignments);
 }
 var seedGroups = function() {
 	var group = {
