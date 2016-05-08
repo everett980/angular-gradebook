@@ -569,7 +569,7 @@ var seedMasterAssignments = function() {
 	return MasterAssignment.create(masterAssignments);
 }
 var seedAssignments = function() {
-	var testScores = stochasm({mean: 85, stdev: 9, min: 70, max: 100})
+	var testScores = stochasm({mean: 85, stdev: 13, min: 70, max: 100})
 		assignments = results["masters"].map(function(master) {
 			return {
 				masterAssignment: master._id,
