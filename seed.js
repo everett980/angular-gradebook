@@ -577,7 +577,7 @@ var seedAssignments = function() {
 					studentScores: results["students"].map(function(student) {
 						const returnMe = {
 							studentRef: student._id,
-							score: testScores.next() - 4 + Math.random() * 4;
+							score: testScores.next() - 4 + Math.random() * 4
 						}
 						if(master.tags.indexOf('spatial') > -1) {
 							returnMe.score = returnMe.score + 10;
