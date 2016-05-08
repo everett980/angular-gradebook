@@ -14,7 +14,7 @@ var schema = new mongoose.Schema({
     }],
     assignments: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'MasterAssignment'
+        ref: 'Assignment'
     }]
 });
 
