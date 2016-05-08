@@ -11,8 +11,14 @@ function ctrl($scope) {
   $scope.items = [
     {
       icon: "view_list",
-      name: "Gradebook"
-    }, {
+      name: "Gradebook",
+      sref: "gradebook"
+    },
+    // {
+    //   icon: "timeline",
+    //   name: "Stats"
+    // },
+    {
       icon: "face",
       name: "Students"
     },
