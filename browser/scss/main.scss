@@ -1,3 +1,5 @@
+@import "./directives/colors";
+
 * {
   box-sizing: border-box;
 }
@@ -20,9 +22,10 @@ body {
 }
 
 .navbar-container {
-  background: #607D8B;
+  background: $mainColor;
   height: 58px;
   color: white;
+  border-color: transparent;
 
 
 }
@@ -57,8 +60,19 @@ body {
   }
 }
 
+.app-content {
+  display: -webkit-flex;
+  display: flex;
+  .left-menu {
+    max-width: 260px;
+    padding: 32px 16px;
+  }
+
+}
+
 @import 'directives/main';
 @import 'home/main';
 @import 'about/main';
 @import 'tutorial/main';
 @import 'login/main';
+@import 'navigation/main';
