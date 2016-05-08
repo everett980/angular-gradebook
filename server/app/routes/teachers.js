@@ -1,7 +1,8 @@
 'use strict';
 var router = require('express').Router();
 var mongoose = require('mongoose');
-var Teacher = require("../../db/models/teacher");
+require("../../db/models/teacher");
+var Teacher = mongoose.model('Teacher');
 
 //read all
 router.get('/', function(req, res, next){
@@ -18,6 +19,14 @@ router.post('/', function(req, res, next){
         res.status(201).send(result);
     });
 });
+
+//get by uid
+router.get('/uid/:teacherUID/', (req, res, next) => {
+	Teacher.findOne({uid: req.params.teacherUID}).exec()
+	.then((result) => {
+		res.send(result);
+	});
+})
 
 //read one
 router.get('/:teacherId', function(req, res, next){
