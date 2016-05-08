@@ -1,7 +1,7 @@
 'use strict';
 var router = require('express').Router();
 var mongoose = require('mongoose');
-var Group = require("../../../db/models/group");
+var Group = require("../../db/models/group");
 
 //read all
 router.get('/', function(req, res, next){
