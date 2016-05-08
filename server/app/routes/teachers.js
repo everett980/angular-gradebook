@@ -26,7 +26,7 @@ router.get('/uid/:teacherUID/', (req, res, next) => {
 	.then((result) => {
 		res.send(result);
 	});
-})
+});
 
 //read one
 router.get('/:teacherId', function(req, res, next){
