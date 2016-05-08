@@ -8,7 +8,7 @@ app.config(function ($stateProvider) {
 
 });
 
-app.controller('LoginCtrl', function ($scope, AuthService, $state, FirebaseFactory) {
+app.controller('SignupCtrl', function ($scope, AuthService, $state, FirebaseFactory) {
 
     $scope.signup = {};
     $scope.error = null;
